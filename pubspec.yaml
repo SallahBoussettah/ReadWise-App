@@ -40,6 +40,7 @@ dependencies:
   
   # Local database
   sqflite: ^2.3.3+1
+  path: ^1.9.0
   
   # Dependency injection
   get_it: ^7.7.0
@@ -62,6 +63,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  
+  # For SQLite testing
+  sqflite_common_ffi: ^2.3.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
