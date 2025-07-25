@@ -55,6 +55,9 @@ dependencies:
   
   # UUID generation
   uuid: ^4.5.1
+  
+  # Equality comparison
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +72,14 @@ dev_dependencies:
   
   # For SQLite testing
   sqflite_common_ffi: ^2.3.3
+  
+  # Testing utilities
+  bloc_test: ^9.1.7
+  mockito: ^5.4.4
+  build_runner: ^2.4.12
+  
+  # Additional testing utilities
+  equatable: ^2.0.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
