@@ -15,22 +15,22 @@ class UserStats {
 
   Map<String, dynamic> toJson() {
     return {
-      'currentStreak': currentStreak,
-      'longestStreak': longestStreak,
-      'totalBooksRead': totalBooksRead,
-      'totalPagesRead': totalPagesRead,
-      'lastReadingDate': lastReadingDate?.millisecondsSinceEpoch,
+      'current_streak': currentStreak,
+      'longest_streak': longestStreak,
+      'total_books_read': totalBooksRead,
+      'total_pages_read': totalPagesRead,
+      'last_reading_date': lastReadingDate?.millisecondsSinceEpoch,
     };
   }
 
   factory UserStats.fromJson(Map<String, dynamic> json) {
     return UserStats(
-      currentStreak: json['currentStreak'] as int,
-      longestStreak: json['longestStreak'] as int,
-      totalBooksRead: json['totalBooksRead'] as int,
-      totalPagesRead: json['totalPagesRead'] as int,
-      lastReadingDate: json['lastReadingDate'] != null
-          ? DateTime.fromMillisecondsSinceEpoch(json['lastReadingDate'] as int)
+      currentStreak: json['current_streak'] as int,
+      longestStreak: json['longest_streak'] as int,
+      totalBooksRead: json['total_books_read'] as int,
+      totalPagesRead: json['total_pages_read'] as int,
+      lastReadingDate: json['last_reading_date'] != null
+          ? DateTime.fromMillisecondsSinceEpoch(json['last_reading_date'] as int)
           : null,
     );
   }
